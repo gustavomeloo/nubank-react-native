@@ -1,4 +1,10 @@
+import { Animated } from "react-native";
 import styled from "styled-components";
+
+export const SafeAreaView = styled.SafeAreaView`
+  flex: 1;
+  background: #8B10AE;
+`;
 
 export const Container = styled.View`
 
@@ -16,7 +22,9 @@ export const Content = styled.View`
 
 `;
 
-export const Card = styled.View`
+
+//Uma animação não pode estar em uma view só, mas sim em um Animated.View
+export const Card = styled(Animated.View)`
   flex : 1;
   background: #FFF;
   border-radius: 4px;

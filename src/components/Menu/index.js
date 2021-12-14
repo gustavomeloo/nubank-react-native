@@ -6,12 +6,17 @@ import {Container, Code, Nav, NavItem, NavText, SignOutButton, SignOutButtonText
 import Icon from "react-native-vector-icons/MaterialIcons";
 
 
-export default function Menu() {
+export default function Menu({translateY}) {
   return(
-    <Container>
+    <Container style={{
+      opacity: translateY.interpolate({
+        inputRange: [0, 150],
+        outputRange: [0, 1],
+      })
+    }}>
 
       <Code>
-        <QRCode value="https://www.corinthians.com.br/" size={80} bgColor="#FFF" fgColor="#8B10AE"/>
+        <QRCode value="https://nubank.com.br/" size={80} bgColor="#FFF" fgColor="#8B10AE"/>
       </Code>
 
       <Nav>
