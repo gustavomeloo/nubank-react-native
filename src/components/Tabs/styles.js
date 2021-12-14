@@ -8,9 +8,6 @@ export const Container = styled(Animated.View)`
 
 `
 
-//A scrollview tem duas formas de manipular o style dela, dentro(content) e fora como padrão mexendo na altura e espaçamento na parte de fora
-//para manipular o content da scrollview adicione um ".attrs({})" 
-//horizontal : scrollview gire horizontalmente
 export const TabsContainer = styled.ScrollView.attrs({
   horizontal: true,
   contentContainerStyle : { paddingLeft : 10, paddingRight: 20},

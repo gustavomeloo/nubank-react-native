@@ -4,7 +4,6 @@ import logo from '../../assets/Nubank_Logo.png';
 
 import { Container, Top, Logo, Title } from './styles'
 
-//link o react-native-vector-icons com o seu projeto
 import Icon from "react-native-vector-icons/MaterialIcons";
 
 export default function Header() {

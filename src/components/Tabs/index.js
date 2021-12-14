@@ -2,7 +2,6 @@ import React from "react";
 
 import { Container, TabsContainer, TabItem, TabText } from './styles'
 
-//link o react-native-vector-icons com o seu projeto
 import Icon from "react-native-vector-icons/MaterialIcons";
 
 export default function Tabs({ translateY }) {

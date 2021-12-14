@@ -22,8 +22,6 @@ export const Content = styled.View`
 
 `;
 
-
-//Uma animação não pode estar em uma view só, mas sim em um Animated.View
 export const Card = styled(Animated.View)`
   flex : 1;
   background: #FFF;
